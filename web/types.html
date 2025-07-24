@@ -1,0 +1,88 @@
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>クラブの種類 詳細ガイド</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <h1 class="fade-in">クラブの種類 詳細ガイド</h1>
+
+  <p class="fade-in">ここではチャラ箱、音箱、クラブバーの違いを詳しく紹介します。</p>
+
+  <h2 class="fade-in">大型クラブ（チャラ箱）</h2>
+  <p class="fade-in">パーティー目的の人が多く、賑やかで非日常感重視のクラブです。朝まで思いっきりお酒を楽しむならここ！ただし、客層がさまざまなのでナンパやトラブルはつきもの…</p>
+
+  <div class="fade-in club-example"></div>
+
+  <img src="t2.jpg" alt="T2新宿のパーティー風景" class="fade-in club-photo" />
+
+  <div class="fade-in club-example">
+    <span class="club-name">ex.）T2新宿</span><br />
+    <a href="https://t2-shinjuku.com/" target="_blank" rel="noopener">▶︎ 公式サイトを見る</a>
+  </div>
+
+  <h2 class="fade-in">音箱</h2>
+  <p class="fade-in">音楽ファン向け。お酒や人との交流よりも音楽重視で、DJや音響設備が選りすぐりの場所です。</p>
+
+  <div class="fade-in club-example"></div>
+
+  <div class="fade-in image-grid">
+    <img src="oto1.jpg" alt="CIRCUS Tokyo 写真1" />
+    <img src="oto2.jpg" alt="CIRCUS Tokyo 写真2" />
+    <img src="oto3.jpg" alt="CIRCUS Tokyo 写真3" />
+    <img src="oto4.jpg" alt="CIRCUS Tokyo 写真4" />
+  </div>
+
+  <div class="fade-in club-example">
+    <span class="club-name">ex.）CIRCUS Tokyo（渋谷）</span><br />
+    <a href="https://circus-tokyo.jp/" target="_blank" rel="noopener">▶︎ 公式サイトを見る</a>
+  </div>
+
+  <h2 class="fade-in">クラブバー</h2>
+  <p class="fade-in">飲みや会話を中心にしつつ、音楽も楽しめるバーです。内装が綺麗な場所が多く、行くだけでわくわく！！</p>
+
+  <div class="fade-in slider-container">
+    <div class="slider-track">
+      <img src="bar1.jpg" alt="バー 写真1" />
+      <img src="bar2.jpg" alt="バー 写真2" />
+      <img src="bar3.jpg" alt="バー 写真3" />
+      <img src="bar4.jpg" alt="バー 写真4" />
+      <img src="bar5.jpg" alt="バー 写真5" />
+      <img src="bar6.jpg" alt="バー 写真6" />
+      <img src="bar7.jpg" alt="バー 写真7" />
+      <img src="bar8.jpg" alt="バー 写真8" />
+
+      <img src="bar1.jpg" alt="バー 写真1" />
+      <img src="bar2.jpg" alt="バー 写真2" />
+      <img src="bar3.jpg" alt="バー 写真3" />
+      <img src="bar4.jpg" alt="バー 写真4" />
+      <img src="bar5.jpg" alt="バー 写真5" />
+      <img src="bar6.jpg" alt="バー 写真6" />
+      <img src="bar7.jpg" alt="バー 写真7" />
+      <img src="bar8.jpg" alt="バー 写真8" />
+    </div>
+  </div>
+
+  <div class="fade-in club-example">
+    <span class="club-name">ex.）MEZZO TOKYO（六本木）</span><br />
+    <a href="https://mezzo.tokyo/" target="_blank" rel="noopener">▶︎ 公式サイトを見る</a>
+  </div>
+
+  <p class="fade-in center">
+    <a href="index.html">← トップに戻る</a>
+  </p>
+
+  <script>
+    const fadeElems = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeElems.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

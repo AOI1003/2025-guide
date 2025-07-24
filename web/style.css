@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.8;
+}
+
+.title-box h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #d98ff4, 0 0 20px #d98ff4;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #d98ff4, 0 0 10px #d98ff4;
+  }
+  to {
+    text-shadow: 0 0 20px #d98ff4, 0 0 30px #ff77ff;
+  }
+}
+
+.intro-section {
+  background-image: url('INTRO.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 350px; 
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.intro-section .overlay {
+  background-color: rgba(0, 0, 0, 0.6); 
+  position: absolute;
+  inset: 0; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 0; 
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.section {
+  margin: 4rem 0;
+}
+
+.title-box {
+  border: 1px solid #d98ff4;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #fff; 
+}
+
+
+.highlight-section {
+  background: linear-gradient(90deg, #d98ff4, #8ef4f4);
+  color: #000;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 15px #d98ff4;
+}
+
+.three-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media(min-width: 600px) {
+  .three-columns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.column {
+  text-align: center;
+  flex: 1;
+}
+
+ul.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+ul.checklist li {
+  margin: 1rem 0;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+}
+
+.small {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.center {
+  text-align: center;
+}
+
+a {
+  color: #d98ff4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.qa {
+  margin: 1rem 0;
+}
+
+.qa-question {
+  font-weight: bold;
+  color: #d98ff4;
+}
+
+.qa-answer {
+  margin-left: 1rem;
+}
+
+.box-list {
+  background-color: #111;
+  padding: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.box-list h4 {
+  margin: 0 0 0.5rem;
+  color: #d98ff4;
+}
+
+
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.insta-profile-card {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 0 15px #d98ff4;
+  flex-wrap: wrap;
+}
+
+.insta-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #d98ff4;
+}
+
+.insta-info {
+  flex: 1;
+  color: #fff;
+}
+
+.insta-info h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #d98ff4;
+}
+
+.insta-info p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.insta-button {
+  display: inline-block;
+  margin-top: 0.8rem;
+  background: linear-gradient(90deg, #d98ff4, #8ef4f4);
+  color: #000;
+  font-weight: bold;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.insta-button:hover {
+  background: linear-gradient(90deg, #8ef4f4, #d98ff4);
+  transform: scale(1.05);
+}
+
+hr.section-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, #d98ff4, #8ef4f4);
+  margin: 2rem 0;
+}
